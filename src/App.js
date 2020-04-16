@@ -2,9 +2,9 @@ import React from "react";
 
 import "./App.css";
 import Header from "./components/Header";
-import Login from "./components/Login";
-import Welcome from "./components/Welcome";
-import {Container} from "react-bootstrap"
+import Login from "./views/Login";
+import Welcome from "./views/Welcome";
+import { Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
