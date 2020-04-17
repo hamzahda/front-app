@@ -3,7 +3,6 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Login from "./views/Login";
-import Welcome from "./views/Welcome";
 import { Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,8 +15,9 @@ function App() {
         <Header />
         <Container className="body">
           <Switch>
-            <Route path="/login" component={Login}></Route>
-            <Route path="/" component={Welcome}></Route>
+            <Container className="login">
+            <Route path="/" component={Login}></Route>
+            </Container>
           </Switch>
         </Container>
       </Router>

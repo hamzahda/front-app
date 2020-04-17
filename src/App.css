@@ -7,8 +7,12 @@
   min-height: 100vh;
   color: azure;
 }
-.body{
+.login{
+  margin: 4rem;
   display: flex;
+  
   justify-content: center;
-
+}
+.login input{
+  width: min-content;
 }
