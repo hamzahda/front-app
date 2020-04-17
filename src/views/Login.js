@@ -6,7 +6,7 @@ function Login() {
   const [validated, setValidated] = useState(false);
   const [userData, setUserData] = useState({});
 
-  const [check, setCheck] = useState(false);
+  const [check, setCheck] = useState(undefined);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -35,14 +35,14 @@ function Login() {
       <Container>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Form.Group controlId="formGroupEmail">
-            <Form.Label>Email address: </Form.Label>
+            <Form.Label>Adresse Email: </Form.Label>
             <Form.Control type="email" placeholder="Enter email" required />
           </Form.Group>
           <Form.Group controlId="formGroupPassword">
-            <Form.Label>Password: </Form.Label>
+            <Form.Label>Mot De Passe: </Form.Label>
             <Form.Control type="password" placeholder="Password" required />
           </Form.Group>
-          <Button type="submit">Login</Button>
+          <Button type="submit">  Se Connecter </Button>
         </Form>
       </Container>
     </div>

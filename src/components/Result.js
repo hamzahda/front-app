@@ -1,19 +1,24 @@
 import React from "react";
-import { Alert , Container } from "react-bootstrap";
+import { Alert, Container } from "react-bootstrap";
 
-function Result(props){
-    console.log("result  " + props.check);
-    if(props.check === true){
-        return(
-            <Alert variant="success">
-                <Alert.Heading> You're logged in </Alert.Heading>
-                <p> Address : {props.user.address} </p>
-            </Alert>
-        );
-    }else{
-        return(<Container> Please enter your credentials </Container>);
-         
-    }
-}   
+function Result(props) {
+  console.log("result  " + props.check);
+  if (props.check === true) {
+    return (
+      <Alert variant="success">
+        <Alert.Heading> Vous etes connectez </Alert.Heading>
+        <p>Adresse : {props.user.address} </p>
+      </Alert>
+    );
+  } else if (props.check === false) {
+    return (
+      <Alert variant="warning">
+        <Alert.Heading> Incorrecte </Alert.Heading>
+      </Alert>
+    );
+  } else {
+    return <Container> Entrez Votre Coordonnées </Container>;
+  }
+}
 
 export default Result;
